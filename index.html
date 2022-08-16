@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -30,8 +30,20 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <container class="container">
+      <!-- Work day time blocks with id and class -->
+      
       <row id= "9" class="time-block row">
         <div class="col-md-2 hour">9 AM</div>
+        
+        <textarea
+        class="discription col-md-8"
+          placeholder="Click to add event"
+        ></textarea>
+
+        <button type="button" class="col-md-2 saveBtn">SAVE<lock-icon name="ballon-outline"></lock-icon></ion-icon></button>
+      </row>
+      <row id= "10" class="time-block row">
+        <div class="col-md-2 hour">10 AM</div>
 
         <textarea
           class="discription col-md-8"
@@ -40,88 +52,78 @@
 
         <button type="button" class="col-md-2 saveBtn">SAVE<lock-icon name="ballon-outline"></lock-icon></ion-icon></button>
       </row>
-      <row class="row">
-        <div class="col-md-2 hour"><span id="10">10 AM</span></div>
+      <row id= "11" class="time-block row">
+        <div class="col-md-2 hour">11 AM</div>
 
         <textarea
-          class="col-md-8 timeBlocks"
+          class="discription col-md-8"
           placeholder="Click to add event"
         ></textarea>
 
         <button type="button" class="col-md-2 saveBtn">SAVE<lock-icon name="ballon-outline"></lock-icon></ion-icon></button>
       </row>
-      <row class="row">
-        <div class="col-md-2 hour"><span id="11">11 AM</span></div>
+      <row id= "12" class="time-block row">
+        <div class="col-md-2 hour">12 PM</div>
 
         <textarea
-          class="col-md-8 timeBlocks"
+          class="discription col-md-8"
           placeholder="Click to add event"
         ></textarea>
 
         <button type="button" class="col-md-2 saveBtn">SAVE<lock-icon name="ballon-outline"></lock-icon></ion-icon></button>
       </row>
-      <row class="row">
-        <div class="col-md-2 hour"><span id="12">12 PM</span></div>
+      <row id= "1" class="time-block row">
+        <div class="col-md-2 hour">1 PM</div>
 
         <textarea
-          class="col-md-8 timeBlocks"
+          class="discription col-md-8"
           placeholder="Click to add event"
         ></textarea>
 
         <button type="button" class="col-md-2 saveBtn">SAVE<lock-icon name="ballon-outline"></lock-icon></ion-icon></button>
       </row>
-      <row class="row">
-        <div class="col-md-2 hour"><span id="1">1 PM</span></div>
+      <row id= "2" class="time-block row">
+        <div class="col-md-2 hour">2 PM</div>
 
         <textarea
-          class="col-md-8 timeBlocks"
+          class="discription col-md-8"
           placeholder="Click to add event"
         ></textarea>
 
         <button type="button" class="col-md-2 saveBtn">SAVE<lock-icon name="ballon-outline"></lock-icon></ion-icon></button>
       </row>
-      <row class="row">
-        <div class="col-md-2 hour"><span id="2">2 PM</span></div>
+      <row id= "3" class="time-block row">
+        <div class="col-md-2 hour">3 PM</div>
 
         <textarea
-          class="col-md-8 timeBlocks"
+          class="discription col-md-8"
           placeholder="Click to add event"
         ></textarea>
 
         <button type="button" class="col-md-2 saveBtn">SAVE<lock-icon name="ballon-outline"></lock-icon></ion-icon></button>
       </row>
-      <row class="row">
-        <div class="col-md-2 hour"><span id="3">3 PM</span></div>
+      <row id= "4" class="time-block row">
+        <div class="col-md-2 hour">4 PM</div>
 
         <textarea
-          class="col-md-8 timeBlocks"
+          class="discription col-md-8"
           placeholder="Click to add event"
         ></textarea>
 
         <button type="button" class="col-md-2 saveBtn">SAVE<lock-icon name="ballon-outline"></lock-icon></ion-icon></button>
       </row>
-      <row class="row">
-        <div class="col-md-2 hour"><span id="4">4 PM</span></div>
+      <row id= "5" class="time-block row">
+        <div class="col-md-2 hour">5 PM</div>
 
         <textarea
-          class="col-md-8 timeBlocks"
-          placeholder="Click to add event"
-        ></textarea>
-
-        <button type="button" class="col-md-2 saveBtn">SAVE<lock-icon name="ballon-outline"></lock-icon></ion-icon></button>
-      </row>
-      <row class="row">
-        <div class="col-md-2 hour"><span id="5">5 PM</span></div>
-
-        <textarea
-          class="col-md-8 timeBlocks"
+          class="discription col-md-8"
           placeholder="Click to add event"
         ></textarea>
 
         <button type="button" class="col-md-2 saveBtn">SAVE<lock-icon name="ballon-outline"></lock-icon></ion-icon></button>
       </row>
 
-      <!-- Timeblocks go here -->
+
     </container>
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

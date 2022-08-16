@@ -19,6 +19,7 @@ let dateFormat = moment().format("MMMM Do YYYY");
 displayDate.innerHTML = dateFormat;
 let currentHour = moment().hours();
 
+//function changes background color based on current time
 function color() {
   $(".time-block").each(function () {
     var hour = $(this).attr("id");
@@ -32,5 +33,15 @@ function color() {
     }
   });
 }
-
+//call function
 color();
+
+//function stores user input
+function store() {
+  var text = $("");
+  localStorage.setItem("text", JSON.stringify(text));
+  console.log(text);
+}
+
+//call function  on user click of SAVE
+store(addEventListener(click));
