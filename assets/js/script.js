@@ -37,6 +37,7 @@ function color() {
 color();
 
 //function stores user input
+$("").on("click")
 function store() {
   var text = $("");
   localStorage.setItem("text", JSON.stringify(text));
