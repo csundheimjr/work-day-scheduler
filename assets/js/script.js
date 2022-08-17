@@ -23,6 +23,8 @@ let currentHour = moment().hours();
 function color() {
   $(".time-block").each(function () {
     var hour = $(this).attr("id");
+    console.log("hour", hour, "<", "currentHour", currentHour);
+
     if (hour < currentHour) {
       $(this).addClass("past");
     }
@@ -37,12 +39,13 @@ function color() {
 color();
 
 //function stores user input
-$("").on("click")
-function store() {
+
+function store(event) {
   var text = $("");
   localStorage.setItem("text", JSON.stringify(text));
   console.log(text);
 }
 
+//prevent default
 //call function  on user click of SAVE
-store(addEventListener(click));
+$(".saveBtn").on("click", store);
